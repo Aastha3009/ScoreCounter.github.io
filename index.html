@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Score Keeper</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+		/>
+
+		<style></style>
+	</head>
+	<body>
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-half is-offset-one-quarter">
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is2by1">
+									<img
+										src="https://img.olympicchannel.com/images/image/private/t_s_w2440/t_s_16_9_g_auto/f_auto/primary/tdslyl0pptzs6vst4uq5"
+										alt="Badminton"
+									/>
+								</figure>
+							</div>
+							<header class="card-header">
+								<p class="card-header-title">Badminton Score Keeper</p>
+							</header>
+							<div class="card-content">
+								<div class="content">
+									<h1 class="tile is-1">
+										<span id="player1">0</span> to <span id="player2">0</span>
+									</h1>
+									<p class="content">
+										Use Button to keep the track of the score
+									</p>
+								</div>
+								<label for="WinningScore" class="label is-large is-inline"
+									>Match of</label
+								>
+								<div class="select is-rounded">
+									<select name="" id="WinningScore">
+										<option value="3">3</option>
+										<option value="5">5</option>
+										<option value="7">7</option>
+										<option value="10">10</option>
+										<option value="15">15</option>
+									</select>
+								</div>
+								<footer class="card-footer">
+									<button
+										id="p1button"
+										class="is-primary button card-footer-item is-large"
+									>
+										+1 Player1
+									</button>
+									<button
+										id="p2button"
+										class="is-info button card-footer-item is-large"
+									>
+										+1 Player2
+									</button>
+									<button
+										id="reset"
+										class="is-danger button card-footer-item is-large"
+									>
+										Reset
+									</button>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="app.js"></script>
+	</body>
+</html>
